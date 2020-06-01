@@ -19,6 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "typeRoots": ["src/renderer/@types/custom.d.ts", "./node_modules/@types"]
   }
 }

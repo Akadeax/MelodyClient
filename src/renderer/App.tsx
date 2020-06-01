@@ -2,9 +2,10 @@ import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
-import { Login } from './pages';
-import { RouteWithLayout, RouteNoLayout } from './Utilities';
+import { Login, Editor } from './pages';
+import EditorLayout from "./layouts/EditorLayout";
 
+import { RouteWithLayout } from './Utilities';
 
 /*
 hot component will take care of hot-reloading the electron application
@@ -16,7 +17,7 @@ export default hot((): JSX.Element =>
  (
   <HashRouter>
    <Switch>
-    <RouteNoLayout path="/" component={Login}/>
+    <RouteWithLayout path="/" component={Editor} layout={EditorLayout}/>
    </Switch>
   </HashRouter>
  ));

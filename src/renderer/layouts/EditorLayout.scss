@@ -1,0 +1,27 @@
+.app {
+    display: flex;
+}
+
+.sidebar {
+    width: 10vw;
+    height: 100vh;
+    background-color: tomato;
+}
+
+.topbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+    width: 90vw;
+    height: 5vh;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    width: 90vw;
+    height: 5vh;
+}
